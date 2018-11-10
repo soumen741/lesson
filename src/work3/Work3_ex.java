@@ -9,6 +9,10 @@ public class Work3_ex {
 		 * ②その中で最大値と最小値を変数max,minに代入して、コンソールに出力してください。
 		 *
 		 */
-
+		int[] aaa = new int[] { 80, 75, 100, 90, 80 };
+		int max = aaa[2];
+		int min = aaa[1];
+		System.out.println(max);
+		System.out.println(min);
 	}
 }

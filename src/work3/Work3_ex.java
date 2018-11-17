@@ -13,10 +13,17 @@ public class Work3_ex {
 		 * 2. if文も使う
 		 *
 		 */
+		int max = 0;
+		int min = 100;
 		int[] aaa = new int[] { 80, 75, 100, 90, 80 };
-		int max = aaa[2];
-		int min = aaa[1];
-		System.out.println(max);
-		System.out.println(min);
+		for (int i = 0; i < aaa.length; i++) {
+			if (aaa[i] > max)
+				max = aaa[i];
+			if (aaa[i] < min)
+				min = aaa[i];
+		}
+		System.out.println("max=" + max);
+		System.out.println("min=" + min);
+
 	}
 }

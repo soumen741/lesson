@@ -20,23 +20,23 @@ public class Work5_ex {
 		calc(a, b);
 
 		System.out.println("aとb");
-		message(calc(a, b));
-		message(salt(a, b));
-		message(luna(a, b));
-		message(cell(a, b));
-		message(gung(a, b));
+		message1(calc(a, b));
+		message2(salt(a, b));
+		message3(luna(a, b));
+		message4(cell(a, b));
+		message5(gung(a, b));
 		System.out.println("aとc");
-		message(calc(a, c));
-		message(salt(a, c));
-		message(luna(a, c));
-		message(cell(a, c));
-		message(gung(a, c));
+		message1(calc(a, c));
+		message2(salt(a, c));
+		message3(luna(a, c));
+		message4(cell(a, c));
+		message5(gung(a, c));
 		System.out.println("aとd");
-		message(calc(a, d));
-		message(salt(a, d));
-		message(luna(a, d));
-		message(cell(a, d));
-		message(gung(a, d));
+		message1(calc(a, d));
+		message2(salt(a, d));
+		message3(luna(a, d));
+		message4(cell(a, d));
+		message5(gung(a, d));
 	}
 
 	public static int calc(int x, int y) {
@@ -64,29 +64,43 @@ public class Work5_ex {
 		return ans5;
 	}
 
-	public static void message(int ans1,int ans2,int ans3,int ans4,int ans5) {
+	public static void message1(int ans1) {
 		if (ans1 > 0) {
 			System.out.println("計算結果は" + ans1 + "です。");
 		} else {
 			System.out.println("エラー");
 		}
+	}
+
+	public static void message2(int ans2) {
 		if (ans2 > 0) {
 			System.out.println("計算結果は" + ans2 + "です。");
 		} else {
 			System.out.println("エラー");
-		}if (ans3 > 0) {
+		}
+	}
+
+	public static void message3(int ans3) {
+		if (ans3 > 0) {
 			System.out.println("計算結果は" + ans3 + "です。");
 		} else {
 			System.out.println("エラー");
 		}
+	}
+
+	public static void message4(int ans4) {
 		if (ans4 > 0) {
 			System.out.println("計算結果は" + ans4 + "です。");
 		} else {
 			System.out.println("エラー");
 		}
+	}
+
+	public static void message5(int ans5) {
 		if (ans5 > 0) {
 			System.out.println("計算結果は" + ans5 + "です。");
 		} else {
 			System.out.println("エラー");
 		}
 	}
+}
